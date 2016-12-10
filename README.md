@@ -4,6 +4,15 @@
 
 Sets up [ESLint](http://eslint.org/).
 
+## CLI
+
+```
+Usage: setup-eslint <shareable config> --files <glob [glob [...]]>
+
+Options:
+  --files  file glob patterns                                 [array] [required]
+```
+
 ## API
 
 ### `setupEslint(files, shareableConfig)`
