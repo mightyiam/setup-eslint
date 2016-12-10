@@ -1,0 +1,52 @@
+{
+  "name": "setup-eslint",
+  "version": "0.0.0",
+  "description": "Sets up ESLint",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "standard",
+    "tests": "ava",
+    "test": "npm run lint && npm run tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mightyiam/setup-eslint.git"
+  },
+  "keywords": [
+    "setup",
+    "install",
+    "prepare",
+    "configure",
+    "eslint"
+  ],
+  "author": "Shahar Or <mightyiampresence@gmail.com> (mightyiam)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mightyiam/setup-eslint/issues"
+  },
+  "homepage": "https://github.com/mightyiam/setup-eslint#readme",
+  "dependencies": {
+    "add-npm-script": "^2.0.0",
+    "eslint-failing-rules-off-config": "^1.0.0",
+    "find-root": "^1.0.0",
+    "npm-install-package": "^1.1.0",
+    "package-json": "^2.4.0",
+    "pify": "^2.3.0",
+    "prepend-to-npm-script": "^1.0.0",
+    "write-json-file": "^2.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "del": "^2.2.2",
+    "detect-installed": "github:mightyiam/detect-installed#sub-dir",
+    "is-plain-object": "^2.0.1",
+    "load-json-file": "^2.0.0",
+    "mkdir-promise": "^1.0.0",
+    "package-json": "^2.4.0"
+  },
+  "standard": {
+    "ignore": [
+      "test/fixture/**/*"
+    ]
+  }
+}
