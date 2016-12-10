@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Sets up ESLint",
   "main": "lib/index.js",
+  "bin": {
+    "setup-eslint": "lib/cli.js"
+  },
   "scripts": {
     "lint": "standard",
     "tests": "ava",
@@ -33,7 +36,8 @@
     "package-json": "^2.4.0",
     "pify": "^2.3.0",
     "prepend-to-npm-script": "^1.0.0",
-    "write-json-file": "^2.0.0"
+    "write-json-file": "^2.0.0",
+    "yargs": "^6.5.0"
   },
   "devDependencies": {
     "ava": "^0.17.0",
