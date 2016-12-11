@@ -1,6 +1,6 @@
 {
   "name": "setup-eslint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sets up ESLint",
   "main": "lib/index.js",
   "bin": {
