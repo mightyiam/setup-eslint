@@ -9,7 +9,7 @@ const loadJsonFile = require('load-json-file')
 const isPlainObject = require('is-plain-object')
 const { writeFileSync } = require('fs')
 
-const isInstalled = name => detectInstalled(name, true)
+const isInstalled = name => detectInstalled(name, { local: true })
 const fixtureDir = 'test/fixture'
 const readPkg = async () => (await readPkgUp({ normalize: false })).pkg
 let pkg
@@ -35,14 +35,14 @@ test.after(async () => {
   await del([fixtureDir])
 })
 
-test('installs eslint', t => {
+test('installs eslint', async t => {
   const eslintPkgName = 'eslint'
-  t.true(isInstalled(eslintPkgName))
+  t.true(await isInstalled(eslintPkgName))
   t.truthy(pkg.devDependencies[eslintPkgName])
 })
 
-test('installs provided shareable config', t => {
-  t.true(isInstalled(shareableConfigPkgName))
+test('installs provided shareable config', async t => {
+  t.true(await isInstalled(shareableConfigPkgName))
   t.truthy(pkg.devDependencies[shareableConfigPkgName])
 })
 
@@ -51,8 +51,8 @@ test('installs peerDeps of provided shareable config', async t => {
   t.true(isPlainObject(peerDepsObj))
   const peerDeps = Object.keys(peerDepsObj)
   t.true(peerDeps.length > 0)
-  peerDeps.forEach((peerDep) => {
-    t.true(isInstalled(peerDep), `${peerDep} is installed`)
+  peerDeps.forEach(async (peerDep) => {
+    t.true(await isInstalled(peerDep), `${peerDep} is installed`)
   })
 })
 
