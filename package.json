@@ -32,7 +32,7 @@
     "add-npm-script": "^2.0.0",
     "eslint-failing-rules-off-config": "^1.0.0",
     "find-root": "^1.0.0",
-    "npm-install-package": "^1.1.0",
+    "npm-install-package": "^2.1.0",
     "package-json": "^2.4.0",
     "pify": "^2.3.0",
     "prepend-to-npm-script": "^1.0.0",
