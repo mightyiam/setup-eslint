@@ -47,7 +47,7 @@ test('installs provided shareable config', async t => {
 })
 
 test('installs peerDeps of provided shareable config', async t => {
-  const { peerDependencies: peerDepsObj } = await getPkgJson(shareableConfigPkgName, 'latest')
+  const { peerDependencies: peerDepsObj } = await getPkgJson(shareableConfigPkgName)
   t.true(isPlainObject(peerDepsObj))
   const peerDeps = Object.keys(peerDepsObj)
   t.true(peerDeps.length > 0)
