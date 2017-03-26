@@ -33,7 +33,7 @@
     "eslint-failing-rules-off-config": "^1.0.0",
     "find-root": "^1.0.0",
     "npm-install-package": "^2.1.0",
-    "package-json": "^2.4.0",
+    "package-json": "^4.0.0",
     "pify": "^2.3.0",
     "prepend-to-npm-script": "^1.0.0",
     "write-json-file": "^2.0.0",
@@ -46,7 +46,6 @@
     "is-plain-object": "^2.0.1",
     "load-json-file": "^2.0.0",
     "mkdir-promise": "^1.0.0",
-    "package-json": "^4.0.0",
     "standard": "^9.0.2"
   },
   "standard": {
