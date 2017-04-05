@@ -46,7 +46,7 @@
     "is-plain-object": "^2.0.1",
     "load-json-file": "^2.0.0",
     "mkdir-promise": "^1.0.0",
-    "standard": "^9.0.2"
+    "standard": "^10.0.0"
   },
   "standard": {
     "ignore": [
