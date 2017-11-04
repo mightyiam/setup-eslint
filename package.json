@@ -44,7 +44,7 @@
     "del": "^3.0.0",
     "detect-installed": "^2.0.3",
     "is-plain-object": "^2.0.1",
-    "load-json-file": "^3.0.0",
+    "load-json-file": "^4.0.0",
     "mkdir-promise": "^1.0.0",
     "standard": "^10.0.0"
   },
