@@ -34,7 +34,7 @@
     "find-root": "^1.0.0",
     "npm-install-package": "^2.1.0",
     "package-json": "^4.0.0",
-    "pify": "^2.3.0",
+    "pify": "^4.0.0",
     "prepend-to-npm-script": "^1.0.0",
     "write-json-file": "^2.0.0",
     "yargs": "^11.0.0"
