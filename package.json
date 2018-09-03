@@ -36,7 +36,7 @@
     "package-json": "^4.0.0",
     "pify": "^2.3.0",
     "prepend-to-npm-script": "^1.0.0",
-    "write-json-file": "^2.0.0",
+    "write-json-file": "^3.0.1",
     "yargs": "^11.0.0"
   },
   "devDependencies": {
