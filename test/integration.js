@@ -1,4 +1,4 @@
-const { test } = require('ava')
+const test = require('ava')
 const readPkgUp = require('read-pkg-up')
 const writePkg = require('write-pkg')
 const mkdir = require('mkdir-promise')
