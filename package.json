@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "ava": "^1.0.1",
-    "del": "^3.0.0",
+    "del": "^4.0.0",
     "detect-installed": "^2.0.3",
     "is-plain-object": "^2.0.1",
     "load-json-file": "^5.0.0",
